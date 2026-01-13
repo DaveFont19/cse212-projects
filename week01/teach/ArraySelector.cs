@@ -10,7 +10,14 @@ public static class ArraySelector
     }
 
     private static int[] ListSelector(int[] list1, int[] list2, int[] select)
-    {
-        return [];
+    { 
+        List <int> newArray = new List<int>(select.Length);
+        int l1 = 0;
+        int l2 = 0;
+        for(int i = 0; i < select.Length; i++)
+        {
+            newArray.Add(select[i] == 1 ? list1[l1++] : list2[l2++]);
+        }
+        return newArray.ToArray();
     }
 }
