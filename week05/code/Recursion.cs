@@ -179,10 +179,10 @@ public static class Recursion
         }
         var directions = new(int dx, int dy)[]
         {
-            (0, 1), // down
-            (1, 0), // right
-            (0, -1), // up
-            (-1, 0) // left
+            (0, 1),
+            (1, 0),
+            (0, -1),
+            (-1, 0)
         };
         foreach (var (dx, dy) in directions)
         {
